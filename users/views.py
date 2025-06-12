@@ -3,7 +3,7 @@ from rest_framework import generics
 from rest_framework.filters import OrderingFilter
 
 from users.models import Payment
-from users.serializers import CustomUserSerializer, PaymentSerializer
+from users.serializers import PaymentSerializer
 
 
 class PaymentCreateAPIView(generics.CreateAPIView):
@@ -34,7 +34,3 @@ class PaymentUpdateAPIView(generics.UpdateAPIView):
 
 class PaymentDestroyAPIView(generics.DestroyAPIView):
     queryset = Payment.objects.all()
-
-
-class CustomUserCreateAPIView(generics.CreateAPIView):
-    serializer_class = CustomUserSerializer

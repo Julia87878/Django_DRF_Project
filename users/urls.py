@@ -3,7 +3,6 @@ from django.urls import path
 from users.apps import UsersConfig
 
 from .views import (
-    CustomUserCreateAPIView,
     PaymentCreateAPIView,
     PaymentDestroyAPIView,
     PaymentListAPIView,
@@ -30,5 +29,4 @@ urlpatterns = [
         PaymentDestroyAPIView.as_view(),
         name="payment_delete",
     ),
-    path("users/new/", CustomUserCreateAPIView.as_view(), name="customuser_create"),
 ]
