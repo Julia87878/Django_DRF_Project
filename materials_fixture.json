@@ -1,0 +1,53 @@
+[
+{
+    "model": "materials.course",
+    "pk": 1,
+    "fields": {
+        "name": "Python",
+        "description": "Изучение языка программирования",
+        "image": ""
+    }
+},
+{
+    "model": "materials.course",
+    "pk": 2,
+    "fields": {
+        "name": "Java",
+        "description": "Изучение языка программирования",
+        "image": ""
+    }
+},
+{
+    "model": "materials.lesson",
+    "pk": 1,
+    "fields": {
+        "name": "Списки в Python",
+        "description": "Изучение списков",
+        "course": 1,
+        "image": "",
+        "video_url": null
+    }
+},
+{
+    "model": "materials.lesson",
+    "pk": 2,
+    "fields": {
+        "name": "Словари в Python",
+        "description": "Изучение работы со словарями",
+        "course": 1,
+        "image": "",
+        "video_url": null
+    }
+},
+{
+    "model": "materials.lesson",
+    "pk": 4,
+    "fields": {
+        "name": "Введение в Java",
+        "description": "Знакомство с Java",
+        "course": 2,
+        "image": "",
+        "video_url": null
+    }
+}
+]
