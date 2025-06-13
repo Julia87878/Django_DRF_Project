@@ -1,0 +1,128 @@
+[
+{
+    "model": "users.customuser",
+    "pk": 1,
+    "fields": {
+        "password": "Julie17051986!",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "Julia",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-06-12T15:06:40.855Z",
+        "email": "julie014@yandex.ru",
+        "phone_number": null,
+        "avatar": "",
+        "city": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.customuser",
+    "pk": 2,
+    "fields": {
+        "password": "17051986!!!",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "Julietta",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-06-12T15:27:45.240Z",
+        "email": "julie87878@bk.ru",
+        "phone_number": null,
+        "avatar": "",
+        "city": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.payment",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "payment_date": "2025-03-12",
+        "paid_course": 1,
+        "paid_lesson": null,
+        "payment_amount": "125500.00",
+        "payment_method": "Перевод на счет"
+    }
+},
+{
+    "model": "users.payment",
+    "pk": 2,
+    "fields": {
+        "user": 2,
+        "payment_date": "2025-04-11",
+        "paid_course": 2,
+        "paid_lesson": null,
+        "payment_amount": "140500.00",
+        "payment_method": "Перевод на счет"
+    }
+},
+{
+    "model": "users.payment",
+    "pk": 3,
+    "fields": {
+        "user": 1,
+        "payment_date": "2025-05-14",
+        "paid_course": 2,
+        "paid_lesson": null,
+        "payment_amount": "140500.00",
+        "payment_method": "Наличные"
+    }
+},
+{
+    "model": "users.payment",
+    "pk": 4,
+    "fields": {
+        "user": 2,
+        "payment_date": "2025-06-04",
+        "paid_course": 1,
+        "paid_lesson": null,
+        "payment_amount": "125500.00",
+        "payment_method": "Наличные"
+    }
+},
+{
+    "model": "users.payment",
+    "pk": 5,
+    "fields": {
+        "user": 1,
+        "payment_date": "2025-01-09",
+        "paid_course": null,
+        "paid_lesson": 1,
+        "payment_amount": "1500.00",
+        "payment_method": "Перевод на счет"
+    }
+},
+{
+    "model": "users.payment",
+    "pk": 6,
+    "fields": {
+        "user": 2,
+        "payment_date": "2024-12-07",
+        "paid_course": null,
+        "paid_lesson": 4,
+        "payment_amount": "1500.00",
+        "payment_method": "Наличные"
+    }
+},
+{
+    "model": "users.payment",
+    "pk": 7,
+    "fields": {
+        "user": 2,
+        "payment_date": "2024-10-07",
+        "paid_course": null,
+        "paid_lesson": 1,
+        "payment_amount": "1500.00",
+        "payment_method": "Перевод на счет"
+    }
+}
+]
