@@ -1,18 +1,18 @@
 [
 {
     "model": "users.customuser",
-    "pk": 1,
+    "pk": 3,
     "fields": {
-        "password": "Julie17051986!",
-        "last_login": null,
-        "is_superuser": false,
-        "username": "Julia",
+        "password": "pbkdf2_sha256$1000000$iwduw7eqXR9ATDUqkL5Z30$afnb/Kln7nq3KGiQ2ic0I/CSuqYOn6NbFvuaaqL8xlc=",
+        "last_login": "2025-06-13T19:12:07.891Z",
+        "is_superuser": true,
+        "username": "Julie",
         "first_name": "",
         "last_name": "",
-        "is_staff": false,
+        "is_staff": true,
         "is_active": true,
-        "date_joined": "2025-06-12T15:06:40.855Z",
-        "email": "julie014@yandex.ru",
+        "date_joined": "2025-06-13T11:59:18.560Z",
+        "email": "julie014@mail.ru",
         "phone_number": null,
         "avatar": "",
         "city": null,
@@ -22,9 +22,76 @@
 },
 {
     "model": "users.customuser",
-    "pk": 2,
+    "pk": 4,
     "fields": {
-        "password": "17051986!!!",
+        "password": "pbkdf2_sha256$1000000$2sNPYdoYXMxRfq5tDXBHcb$W/hKQKEPGJgVeoGR2xPXMR6K0QbLrq6ribosK7/39u4=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "Juliana",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-06-13T14:27:03Z",
+        "email": "julia87878@inbox.ru",
+        "phone_number": null,
+        "avatar": "",
+        "city": null,
+        "groups": [
+            1
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.customuser",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$gXYuosXF9HyJvxkzXYi8yg$AFR9fTvUA6K4/POtRXFNUB0gSU2F5bnLnMBHZmMMSOY=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "Juliette",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-06-13T15:02:44.809Z",
+        "email": "uliaadonina19@gmail.com",
+        "phone_number": null,
+        "avatar": "",
+        "city": "Воронеж",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.customuser",
+    "pk": 7,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$b08t91IyBrsNKbfn8RxDX8$jCu5fadu63GEz19dvfYfE2zabQC07t2p8p1zVxhxiO0=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "Julia",
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-06-14T12:50:50Z",
+        "email": "julie014@yandex.ru",
+        "phone_number": null,
+        "avatar": "",
+        "city": null,
+        "groups": [
+            1
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.customuser",
+    "pk": 8,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$Rp4DGsEoWfoWc62staYCQ2$IkkTy+Al+f9HuUO45huM0VmmNGX12XIYU8YVEaN5SO4=",
         "last_login": null,
         "is_superuser": false,
         "username": "Julietta",
@@ -32,97 +99,13 @@
         "last_name": "",
         "is_staff": false,
         "is_active": true,
-        "date_joined": "2025-06-12T15:27:45.240Z",
+        "date_joined": "2025-06-14T12:59:45.175Z",
         "email": "julie87878@bk.ru",
         "phone_number": null,
         "avatar": "",
         "city": null,
         "groups": [],
         "user_permissions": []
-    }
-},
-{
-    "model": "users.payment",
-    "pk": 1,
-    "fields": {
-        "user": 1,
-        "payment_date": "2025-03-12",
-        "paid_course": 1,
-        "paid_lesson": null,
-        "payment_amount": "125500.00",
-        "payment_method": "Перевод на счет"
-    }
-},
-{
-    "model": "users.payment",
-    "pk": 2,
-    "fields": {
-        "user": 2,
-        "payment_date": "2025-04-11",
-        "paid_course": 2,
-        "paid_lesson": null,
-        "payment_amount": "140500.00",
-        "payment_method": "Перевод на счет"
-    }
-},
-{
-    "model": "users.payment",
-    "pk": 3,
-    "fields": {
-        "user": 1,
-        "payment_date": "2025-05-14",
-        "paid_course": 2,
-        "paid_lesson": null,
-        "payment_amount": "140500.00",
-        "payment_method": "Наличные"
-    }
-},
-{
-    "model": "users.payment",
-    "pk": 4,
-    "fields": {
-        "user": 2,
-        "payment_date": "2025-06-04",
-        "paid_course": 1,
-        "paid_lesson": null,
-        "payment_amount": "125500.00",
-        "payment_method": "Наличные"
-    }
-},
-{
-    "model": "users.payment",
-    "pk": 5,
-    "fields": {
-        "user": 1,
-        "payment_date": "2025-01-09",
-        "paid_course": null,
-        "paid_lesson": 1,
-        "payment_amount": "1500.00",
-        "payment_method": "Перевод на счет"
-    }
-},
-{
-    "model": "users.payment",
-    "pk": 6,
-    "fields": {
-        "user": 2,
-        "payment_date": "2024-12-07",
-        "paid_course": null,
-        "paid_lesson": 4,
-        "payment_amount": "1500.00",
-        "payment_method": "Наличные"
-    }
-},
-{
-    "model": "users.payment",
-    "pk": 7,
-    "fields": {
-        "user": 2,
-        "payment_date": "2024-10-07",
-        "paid_course": null,
-        "paid_lesson": 1,
-        "payment_amount": "1500.00",
-        "payment_method": "Перевод на счет"
     }
 }
 ]
