@@ -1,8 +1,6 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
-from materials.models import Course, Lesson
-
 
 class CustomUser(AbstractUser):
     email = models.EmailField(unique=True)
@@ -31,17 +29,17 @@ class Payment(models.Model):
     payment_date = models.DateField(
         verbose_name="Дата оплаты", help_text="Укажите дату оплаты."
     )
-    paid_course = models.ForeignKey(
-        Course,
-        on_delete=models.CASCADE,
+    paid_course = models.CharField(
+        max_length=250,
         verbose_name="Оплаченный курс",
+        help_text="Укажите оплаченный курс.",
         blank=True,
         null=True,
     )
-    paid_lesson = models.ForeignKey(
-        Lesson,
-        on_delete=models.CASCADE,
+    paid_lesson = models.CharField(
+        max_length=250,
         verbose_name="Оплаченный урок",
+        help_text="Укажите оплаченный урок.",
         blank=True,
         null=True,
     )
