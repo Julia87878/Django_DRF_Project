@@ -15,6 +15,14 @@ class Course(models.Model):
         blank=True,
         null=True,
     )
+    price = models.DecimalField(
+        max_digits=10,
+        decimal_places=2,
+        verbose_name="Цена",
+        help_text="Укажите цену курса.",
+        blank=True,
+        null=True,
+    )
     owner = models.ForeignKey(
         CustomUser,
         on_delete=models.CASCADE,
@@ -49,6 +57,14 @@ class Lesson(models.Model):
     description = models.TextField(
         verbose_name="Описание",
         help_text="Укажите описание урока",
+        blank=True,
+        null=True,
+    )
+    price = models.DecimalField(
+        max_digits=10,
+        decimal_places=2,
+        verbose_name="Цена",
+        help_text="Укажите цену урока.",
         blank=True,
         null=True,
     )
