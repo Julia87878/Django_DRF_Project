@@ -25,10 +25,10 @@ class Payment(models.Model):
         on_delete=models.CASCADE,
         related_name="payments",
         verbose_name="Пользователь",
+        blank=True,
+        null=True,
     )
-    payment_date = models.DateField(
-        verbose_name="Дата оплаты", help_text="Укажите дату оплаты."
-    )
+    payment_date = models.DateField(auto_now_add=True, verbose_name="Дата оплаты")
     paid_course = models.CharField(
         max_length=250,
         verbose_name="Оплаченный курс",
@@ -43,11 +43,13 @@ class Payment(models.Model):
         blank=True,
         null=True,
     )
-    payment_amount = models.DecimalField(
+    amount = models.DecimalField(
         max_digits=10,
         decimal_places=2,
         verbose_name="Сумма оплаты",
         help_text="Укажите сумму оплаты.",
+        blank=True,
+        null=True,
     )
     payment_method = models.CharField(
         max_length=30,
@@ -56,18 +58,32 @@ class Payment(models.Model):
         blank=True,
         null=True,
     )
+    session_id = models.CharField(
+        max_length=255,
+        verbose_name="Id сессии",
+        help_text="Укажите id ceccии.",
+        blank=True,
+        null=True,
+    )
+    link = models.URLField(
+        max_length=400,
+        verbose_name="Ссылка на оплату",
+        help_text="Укажите ссылку на оплату.",
+        blank=True,
+        null=True,
+    )
 
     class Meta:
-        verbose_name = "платёж"
-        verbose_name_plural = "платежи"
+        verbose_name = "Платёж"
+        verbose_name_plural = "Платежи"
         ordering = [
             "user",
             "payment_date",
             "paid_course",
             "paid_lesson",
-            "payment_amount",
+            "amount",
             "payment_method",
         ]
 
     def __str__(self):
-        return f"{self.user} {self.payment_date} {self.paid_course} {self.paid_lesson} {self.payment_amount}."
+        return f"{self.user} {self.payment_date} {self.paid_course} {self.paid_lesson} {self.amount}."

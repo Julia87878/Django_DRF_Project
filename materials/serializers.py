@@ -7,7 +7,7 @@ from materials.validators import UrlCustomValidator
 class LessonSerializer(serializers.ModelSerializer):
     class Meta:
         model = Lesson
-        fields = ["name", "description", "owner", "course", "image", "video_url"]
+        fields = "__all__"
         validators = [UrlCustomValidator(field="video_url")]
 
 
